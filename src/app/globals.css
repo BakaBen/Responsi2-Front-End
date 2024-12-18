@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+img {
+  transition: .3s ease all;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+img:hover {
+  scale: 102%;
+}
+
+.loading {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#3b82f6 94%,#0000) top/16px 16px no-repeat,
+    conic-gradient(#0000 30%,#766DF4);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 16px),#000 0);
+  animation:s3 1s infinite linear;
+}
+
+@keyframes s3{ 
+  100%{transform: rotate(1turn)}
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    transition: .3s ease all;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+  }
+
+  .grid {
+    padding: 0.5rem;
+  }
+}
