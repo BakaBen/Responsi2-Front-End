@@ -30,7 +30,7 @@ const Pagination = ({ page, lastPage, setPage }) => {
 
   return (
     <div className='flex flex-col justify-center items-center'>
-        <div className='grid grid-cols-3 gap-4 w-3/5 pb-4 pt-10 px-7'>
+        <div className='flex md:flex-row w-30 gap-10 pb-4 pt-10 px-7'>
           {page > 1 ? (
             <Link 
               href="#" 
